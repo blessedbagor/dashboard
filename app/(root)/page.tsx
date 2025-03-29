@@ -5,7 +5,7 @@ import {auth} from '@/auth';
 import { redirect } from "next/navigation";
 import CredentialsSignInForm from "../(auth)/sign-in/credentials-signin-form";
 export const metadata: Metadata = {
-    title: 'Sign In'
+    title: 'Dashboard'
 };
 
 
