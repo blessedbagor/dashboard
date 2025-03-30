@@ -16,7 +16,7 @@ const UserButton = async () => {
 
     if (!session) {
         return (
-            <Button asChild className='ml-2' variant='outline'>
+            <Button asChild className='ml-2 text-black bg-yellow-400 hover:bg-yellow-300 border-none rounded-3xl' variant='outline'>
                 <Link href='/sign-in'>
                 <UserIcon size={64} /> Sign In
                 </Link>
@@ -31,7 +31,7 @@ const UserButton = async () => {
             <DropdownMenuTrigger asChild>
                 <div className="flex items-center">
                     <Button variant='ghost' className='relativee w-8 h-8 rounded-full mx-2 flex items-center
-                    justify center bg-yellow-500'
+                    justify center bg-yellow-400'
                     >
                         
                         {firstInitial}

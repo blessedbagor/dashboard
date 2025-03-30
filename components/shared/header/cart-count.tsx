@@ -9,17 +9,17 @@ const CartCount = ({ cart }: { cart?: Cart }) => {
         <>
             {/* If no cart or no items in cart */}
             {!cart || cart.items.length === 0 ? (
-                <Button asChild variant="ghost">
+                <Button asChild variant="ghost" className="rounded-3xl hover:bg-yellow-400">
                     <Link href="/cart">
                     <ShoppingBag size={64}  />
                     </Link>
                 </Button>
             ) : (
-                <Button asChild variant="ghost">
+                <Button asChild variant="ghost" className="rounded-3xl hover:bg-yellow-400">
                     <Link href="/cart" className="relative flex items-center gap-2">
                         <div className="relative">
                             <ShoppingBag size={64} />
-                            <span className="absolute -top-4 -right-3 bg-yellow-500 rounded-full text-xs font-bold w-4 h-4 flex items-center justify-center">
+                            <span className="absolute -top-4 -right-3 bg-yellow-400 text-black rounded-full text-xs font-bold w-4 h-4 flex items-center justify-center">
                                 {cart.items.reduce((a, c) => a + c.qty, 0)}
                             </span>
                         </div>

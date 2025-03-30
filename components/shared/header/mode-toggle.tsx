@@ -28,7 +28,7 @@ const ModeToggle = () => {
 
     return <DropdownMenu>
         <DropdownMenuTrigger asChild>
-        <Button variant='ghost'className="focus-visible:ring-0 focus-visible:ring-offset-0">
+        <Button variant='ghost'className="focus-visible:ring-0 focus-visible:ring-offset-0 rounded-3xl hover:bg-yellow-400">
             {theme === 'system' ? (<SunMoon size={64}  />
             ) : theme === 'dark' ? (
             <MoonIcon size={64} />

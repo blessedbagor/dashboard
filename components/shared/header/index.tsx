@@ -18,11 +18,6 @@ const Header = () => {
         />
       </Link>
   
-      {/* Search in the center */}
-      <div className="flex-1 flex justify-center">
-
-      </div>
-  
       {/* Menu on the right */}
       <div className="flex items-center">
         <Menu />
