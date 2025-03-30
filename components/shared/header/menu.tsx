@@ -17,7 +17,7 @@ import Link from "next/link";
 const navItems = [
     {name: "Home", href: "https://igift.ph"},
     {name: "About", href: "https://igift.ph/about"},
-    {name: "Products", href: "https://igift.ph/products"},
+    {name: "Shop", href: "/shop"},
     {name: "Services", href: "https://igift.ph/services"},
     {name: "Earn", href: "https://igift.ph/earn"},
     {name: "Events", href: "https://igift.ph/events"},
