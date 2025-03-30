@@ -5,7 +5,7 @@ const Footer = () => {
     return (
     <footer className="border-t">
         <div className="p-5 flex-center text-sm">
-        © 2023 - {`${currentYear}`} {`${APP_NAME} Marketing Innovation Technology Inc.`}. All Rights Reserved.
+        © 2023 - {`${currentYear}`} {`${APP_NAME} Marketing Innovation Technology Inc`}. All Rights Reserved.
         </div>
     </footer>
     );
