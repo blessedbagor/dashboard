@@ -58,7 +58,7 @@ export function WelcomeGuest() {
         </Link>
      </Button>
     <Button asChild className='rounded-2xl border border-white/20 bg-white/10 px-6 py-3 text-lg font-medium text-white hover:text-white backdrop-blur-sm transition-colors hover:bg-white/20 focus:ring-2 focus:ring-white/20 focus:ring-offset-2 focus:ring-offset-black focus:outline-none' variant='outline'>
-        <Link href='/sign-in'>
+        <Link href='/sign-up'>
          Sign Up <ChevronRight size={64} />
         </Link>
      </Button>
