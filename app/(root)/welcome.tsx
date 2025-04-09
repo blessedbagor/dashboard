@@ -8,7 +8,6 @@ export function WelcomeGuest() {
     const images = [
         "/welcome/1.jpg",
         "/welcome/2.jpg",
-        "/welcome/3.jpg",
         "/welcome/4.jpg",
         "/welcome/5.jpg",
         "/welcome/6.jpg",
