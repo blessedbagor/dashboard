@@ -1,8 +1,5 @@
-"use client";
 import { ThreeDMarquee } from "@/components/ui/3d-marquee";
-import { Button } from "@/components/ui/button";
-import { ChevronRight, UserIcon } from "lucide-react";
-import Link from "next/link";
+import WelcomeButton from "./welcome-button";
 
 export function WelcomeGuest() {
     const images = [
@@ -49,20 +46,7 @@ export function WelcomeGuest() {
       <p className="relative z-20 mx-auto max-w-2xl py-8 text-center text-sm text-neutral-200 md:text-base">
       A smarter way to manage your iGift business, track earnings, and grow.
       </p>
-
-      <div className="relative z-20 flex flex-wrap items-center justify-center gap-4 pt-4">
-      <Button asChild className='px-6 py-3 text-lg text-black bg-yellow-400 hover:bg-yellow-300 border-none rounded-3xl' variant='outline'>
-        <Link href='/sign-in'>
-        <UserIcon size={64} /> Sign In
-        </Link>
-     </Button>
-    <Button asChild className='rounded-2xl border border-white/20 bg-white/10 px-6 py-3 text-lg font-medium text-white hover:text-white backdrop-blur-sm transition-colors hover:bg-white/20 focus:ring-2 focus:ring-white/20 focus:ring-offset-2 focus:ring-offset-black focus:outline-none' variant='outline'>
-        <Link href='/sign-up'>
-         Sign Up <ChevronRight size={64} />
-        </Link>
-     </Button>
-      </div>
-
+      <WelcomeButton />
       {/* overlay */}
       <div className="absolute inset-0 z-10 h-full w-full bg-black/80 dark:bg-black/60" />
       <ThreeDMarquee

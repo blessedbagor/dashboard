@@ -35,7 +35,7 @@ const Menu = async () => {
             <Link
                 key={item.name}
                 href={item.href}
-                className="rounded-3xl hover:bg-yellow-400 hover:text-black px-4 py-2 text-sm uppercase font-medium"
+                className="rounded-xl hover:bg-yellow-400 hover:text-black px-4 py-2 text-sm uppercase font-medium"
             >
                 {item.name}
             </Link>
@@ -57,7 +57,7 @@ const Menu = async () => {
                     <Link
                         key={item.name}
                         href={item.href}
-                        className="rounded-3xl hover:bg-yellow-400 hover:text-black px-4 py-2 text-sm uppercase font-medium"
+                        className="rounded-xl hover:bg-yellow-400 hover:text-black px-4 py-2 text-sm uppercase font-medium"
                     >
                         {item.name}
                     </Link>

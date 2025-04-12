@@ -16,7 +16,7 @@ const UserButton = async () => {
 
     if (!session) {
         return (
-            <Button asChild className='ml-2 text-black bg-yellow-400 hover:bg-yellow-300 border-none rounded-3xl' variant='outline'>
+            <Button asChild className='ml-2 text-black dark:text-black bg-yellow-400 hover:bg-yellow-300 border-none rounded-xl' variant='outline'>
                 <Link href='/sign-in'>
                 <UserIcon size={64} /> Sign In
                 </Link>
