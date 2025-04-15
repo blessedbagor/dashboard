@@ -21,7 +21,7 @@ const AdminOrderDetailsPage = async (props: {
     const session = await auth();
     
             if (session?.user?.role !== 'admin') {
-                    return redirect('/my-account');
+                    return redirect('/dashboard');
                 }
 
     const order = await getOrderById(id);

@@ -40,7 +40,7 @@ export async function createUpdateShareService(data: z.infer<typeof insertAffili
             }
         });
 
-        revalidatePath('/my-account/share');
+        revalidatePath('/dashboard/share');
 
         return {
             success: true,

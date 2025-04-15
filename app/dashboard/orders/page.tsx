@@ -63,7 +63,7 @@ const MyAccountOrderPage = async (props: {
                                             : 'Not Yet Delivered'}
                                     </TableCell>
                                     <TableCell>
-                                        <Link href={`/my-account/order/${order.id}`}>
+                                        <Link href={`/dashboard/order/${order.id}`}>
                                             <Eye className="hover:text-yellow-500" />
                                         </Link>
                                     </TableCell>

@@ -17,7 +17,7 @@ const AdminHomePage = async () => {
     const session = await auth();
     
     if (session?.user?.role !== 'admin') {
-        return redirect('/my-account');
+        return redirect('/dashboard');
     };
     
     const summary = await getOrderSummary();

@@ -6,7 +6,7 @@ import { CircleDollarSign, Box, ShoppingBasket, Wallet2Icon } from "lucide-react
 import { Table, TableBody, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 export const metadata: Metadata = {
-    title: 'My Account',
+    title: 'Dashboard',
 }
 
 const UserPage = async () => {
@@ -16,7 +16,7 @@ const UserPage = async () => {
         <SessionProvider session={session}>
             <div className="space-y-6">
             <div className="flex space-x-4  items-center mb-4">
-                <h2 className="h2-bold">My Account</h2>
+                <h2 className="h2-bold">Dashboard</h2>
             </div>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
                 <Card>
