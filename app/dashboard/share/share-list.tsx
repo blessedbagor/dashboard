@@ -91,11 +91,11 @@ const ShareList = ({ userId }: { userId?: string }) => {
               <div className="space-y-4">
                 <div className="flex justify-between">
                   <span className="font-medium">Referral Code:</span>
-                  <span className="text-gray-700">{affiliate.referralCode || "N/A"}</span>
+                  <span className="text-gray-700 dark:text-white">{affiliate.referralCode || "N/A"}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-medium mr-4">Affiliate Link:</span>
-                  <span className="text-gray-700 break-all whitespace-normal">
+                  <span className="text-gray-700 dark:text-white break-all whitespace-normal">
                     {affiliate.affiliateLink || "N/A"}
                   </span>
                 </div>
@@ -106,13 +106,13 @@ const ShareList = ({ userId }: { userId?: string }) => {
                     <Link
                       href={`/${affiliate.referralCode}`}
                       target="_blank"
-                      className="text-gray-500 underline hover:text-yellow-500 break-all"
+                      className="text-gray-500 dark:text-white underline hover:text-yellow-500 break-all"
                     >
                       {`https://igift.ph/${affiliate.referralCode}`}
                     </Link>
                     <button
                       onClick={() => handleCopyClick(`https://igift.ph/${affiliate.referralCode}`)}
-                      className="text-gray-600 hover:text-yellow-500"
+                      className="text-gray-600 dark:text-white hover:text-yellow-500"
                     >
                       <Copy size={18} />
                     </button>
